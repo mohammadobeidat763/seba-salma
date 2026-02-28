@@ -63,12 +63,12 @@ int main()
 
     if (count <= 0 || count > 100)
     {
-        print_msg("ادخل عدد الطلاب (100-1)");
+        print_msg("Enter the number of students (100-1)");
         count = read_num();
     }
     else
     {
-        print_msg("خطأ! أدخل رقم بين (100-1) ");
+        print_msg("Erorr! Enter a number between (100-1) ");
     }
 
 
@@ -79,14 +79,14 @@ int main()
         
         if (grade < 0 || grade > 100)
        {
-            print_msg("درجة الطالب ");
+            print_msg("student grade");
             print_num(i + 1);
             print_msg(": ");
             grade = read_num();
         }
        else
         {
-            print_msg("خطأ! الدرجة بين 0 و 100\n");
+            print_msg("Erorr! the degree between 0 and 100\n");
         }
         grades[i] = grade;
     }
@@ -103,9 +103,9 @@ int main()
     }
 
     
-    print_msg("\n--- الدرجات ---\n");
+    print_msg("\n--- grades ---\n");
     for (int i = 0; i < count; i++) {
-        print_msg("الطالب ");
+        print_msg("student");
         print_num(i + 1);
         print_msg(": ");
         print_num(grades[i]);
@@ -113,17 +113,17 @@ int main()
     }
 
     
-    print_msg("\n--- النتائج ---\n"); 
+    print_msg("\n--- Results ---\n"); 
 
-    print_msg("المتوسط  : ");
+    print_msg("Average  : ");
     print_num(sum / count);
     print_msg("\n");
 
-    print_msg("الأعلى   : ");
+    print_msg("the highest   : ");
     print_num(highest);
     print_msg("\n");
 
-    print_msg("الأدنى   : ");
+    print_msg("the lowest   : ");
     print_num(lowest);
     print_msg("\n");
 
